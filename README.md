@@ -16,12 +16,12 @@ Build tidy data set with the average of each variable for each activity and each
 
 Script 'run_analysis.R' performs calculation of average values for each subject and activity. Calculations performs only on 'mean' and 'std' measurement features.
 Script does the following things:
-  1. Script reads both training and test sets, measurement feature names and activity labels description.
-  2. Filtering measurement to hold on only mean and std error features 
-  3. Subject id, activity description (via its label) merges to datasets
-  4. Test and train data combines in one dataset
-  5. Calculating average of every measurement across subject and activity
-  6. *detailed description provided in CodeBook file*
+  * Script reads both training and test sets, measurement feature names and activity labels description.
+  * Filtering measurement to hold on only mean and std error features 
+  * Subject id, activity description (via its label) merges to datasets
+  * Test and train data combines in one dataset
+  * Calculating average of every measurement across subject and activity
+  * *detailed description provided in CodeBook file*
 
 4. **References**
   - [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
