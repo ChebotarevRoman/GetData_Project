@@ -1,19 +1,20 @@
 # CodeBook
 ## Getting and Cleaning Data Coursera Project
 
-1. *Goal Description*
+**1. Goal Description**
 
 Build tidy data set with the average of each variable for each activity and each subject using UCI Human Activity Recognition Using Smartphones Data Set.
 
-2. **Data Description**
+**2. Data Description**
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities
-- WALKING
-- WALKING_UPSTAIRS
-- WALKING_DOWNSTAIRS
-- SITTING
-- STANDING
-- LAYING 
+	- WALKING
+	- WALKING_UPSTAIRS
+	- WALKING_DOWNSTAIRS
+	- SITTING
+	- STANDING
+	- LAYING 
+
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
@@ -29,31 +30,33 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-- tBodyAcc-XYZ
-- tGravityAcc-XYZ
-- tBodyAccJerk-XYZ
-- tBodyGyro-XYZ
-- tBodyGyroJerk-XYZ
-- tBodyAccMag
-- tGravityAccMag
-- tBodyAccJerkMag
-- tBodyGyroMag
-- tBodyGyroJerkMag
-- fBodyAcc-XYZ
-- fBodyAccJerk-XYZ
-- fBodyGyro-XYZ
-- fBodyAccMag
-- fBodyAccJerkMag
-- fBodyGyroMag
-- fBodyGyroJerkMag
+	- tBodyAcc-XYZ
+	- tGravityAcc-XYZ
+	- tBodyAccJerk-XYZ
+	- tBodyGyro-XYZ
+	- tBodyGyroJerk-XYZ
+	- tBodyAccMag
+	- tGravityAccMag
+	- tBodyAccJerkMag
+	- tBodyGyroMag
+	- tBodyGyroJerkMag
+	- fBodyAcc-XYZ
+	- fBodyAccJerk-XYZ
+	- fBodyGyro-XYZ
+	- fBodyAccMag
+	- fBodyAccJerkMag
+	- fBodyGyroMag
+	- fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-- mean(): Mean value
-- std(): Standard deviation
+	- mean(): Mean value
+	- std(): Standard deviation
+
 and others.
 
-4. **Transformations Description**
+**4. Transformations Description**
+
 	- Load "activity_labels.txt" and "features.txt"
 	- Clean feature names - remove brackets, replace dashes and commas with underscore
 	- Load train and test data - data itselves ("X_train.txt", "X_test.txt"), labels ("y_train.txt", "y_test.txt") and subjects of activity ("subject_train.txt", "subject_test.txt"). For feature names use already loaded appropriate data
@@ -63,7 +66,8 @@ and others.
 	- Aggregate dataset on subject and activity name and calculate average value for each feature
 	- Write back resulting tidy dataset as "activity_dataset.txt"
 
-5. **Sources**
- - Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-- [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](UCI Human Activity Recognition Using Smartphones Data Set)
-- [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](Link to original raw dataset)
+**5. Sources**
+
+	- Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+	- [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](UCI Human Activity Recognition Using Smartphones Data Set)
+	- [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](Link to original raw dataset)
